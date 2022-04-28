@@ -1,10 +1,10 @@
-# ISO7816 core
-# ============
+ISO7816 core
+============
 
-# Register map
-# ------------
+Register map
+------------
 
-# Control & Status `csr` (Read/Write addr `0x00`)
+### Control & Status `csr` (Read/Write addr `0x00`)
 
 ```
 ,-----------------------------------------------------------------------------------------------,
@@ -32,7 +32,7 @@
 ```
 
 
-# TX FIFO Data `data` (Write only addr `0x02`)
+### TX FIFO Data `data` (Write only addr `0x02`)
 
 ```text
 ,-----------------------------------------------------------------------------------------------,
@@ -45,7 +45,7 @@
 ```
 
 
-# RX FIFO Data `data` (Read only addr `0x02`)
+### RX FIFO Data `data` (Read only addr `0x02`)
 
 ```text
 ,-----------------------------------------------------------------------------------------------,
@@ -59,7 +59,7 @@
 ```
 
 
-# Misc configuration `misc` (Write only addr `0x04`)
+### Misc configuration `misc` (Write only addr `0x04`)
 
 ```text
 ,-----------------------------------------------------------------------------------------------,
@@ -81,7 +81,7 @@
 ```
 
 
-# Wait Timer `wt` (Write only addr `0x05`)
+### Wait Timer `wt` (Write only addr `0x05`)
 
 ```text
 ,-----------------------------------------------------------------------------------------------,
@@ -95,7 +95,7 @@
 ```
 
 
-# Baud Rate Generator: Rate control `brg_rate` (Write only addr `0x06`)
+### Baud Rate Generator: Rate control `brg_rate` (Write only addr `0x06`)
 
 ```text
 ,-----------------------------------------------------------------------------------------------,
@@ -114,7 +114,7 @@ approximatively `Baud = f_sys * Ds / Fs`.
 Note that the `Fs / Ds` ratio must be greater than 8 for the core to operate properly !
 
 
-# Baud Rate Generator: Capture phase control `brg_phase` (Write only addr `0x07`)
+### Baud Rate Generator: Capture phase control `brg_phase` (Write only addr `0x07`)
 
 ```text
 ,-----------------------------------------------------------------------------------------------,
